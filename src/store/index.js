@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { compose, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import firebase from '../Firebase/Firebase';
 import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
@@ -10,6 +10,7 @@ import rootReducer from './reducers';
 const rrfConfig = {
   userProfile: 'users',
   useFirestoreForProfile: true, // Firestore for Profile instead of Realtime DB
+  attachAuthIsReady: true, // attaches auth is ready promise to store
 };
 
 const composeEnhancers =
