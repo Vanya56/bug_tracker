@@ -21,7 +21,10 @@ const NavItems = ({ mobile, clicked, loggedIn }) => {
     links = (
       <Ul mobile={mobile}>
         <NavItem mobile={mobile} clicked={clicked} link="/">
-        Bugs
+          Bugs
+        </NavItem>
+        <NavItem mobile={mobile} clicked={clicked} link="/profile">
+          Account
         </NavItem>
         <NavItem mobile={mobile} clicked={clicked} link="/logout">
           Logout
