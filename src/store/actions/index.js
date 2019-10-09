@@ -1,10 +1,10 @@
 export {
-    signUp,
-    signOut,
-    signIn,
-    verifyEmail,
-    recoverPassword,
-    editProfile,
-    deleteUser,
-    clean,
-  } from './authActions';
+  signUp,
+  signOut,
+  signIn,
+  verifyEmail,
+  recoverPassword,
+  editProfile,
+  deleteUser,
+  clean,
+} from './authActions';
