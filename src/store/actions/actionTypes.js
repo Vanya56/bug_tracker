@@ -19,3 +19,8 @@ export const PROFILE_EDIT_FAIL = 'PROFILE_EDIT_FAIL';
 
 export const DELETE_START = 'DELETE_START';
 export const DELETE_FAIL = 'DELETE_FAIL';
+
+
+export const NEW_ISSUE_START = 'NEW_ISSUE_START';
+export const NEW_ISSUE_SUCCESS = 'NEW_ISSUE_SUCCESS';
+export const NEW_ISSUE_FAIL = 'NEW_ISSUE_FAIL';
