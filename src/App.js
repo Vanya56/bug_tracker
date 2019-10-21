@@ -1,4 +1,3 @@
-  
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -11,7 +10,7 @@ import Profile from './containers/Auth/Profile/Profile';
 import VerifyEmail from './containers/Auth/VerifyEmail/VerifyEmail';
 import RecoverPassword from './containers/Auth/RecoverPassword/RecoverPassword';
 import Logout from './containers/Auth/Logout/Logout';
-import Bugs from './containers/Bugs/Bugs';
+import Todos from './containers/Todos/Todos';
 
 const App = ({ loggedIn, emailVerified }) => {
   let routes;
@@ -20,6 +19,7 @@ const App = ({ loggedIn, emailVerified }) => {
     routes = (
       <Switch>
         <Route exact path="/verify-email" component={VerifyEmail} />
+        <Route exact path="/profile" component={Profile} />
         <Route exact path="/logout" component={Logout} />
         <Redirect to="/verify-email" />
       </Switch>
@@ -27,7 +27,7 @@ const App = ({ loggedIn, emailVerified }) => {
   } else if (loggedIn && emailVerified) {
     routes = (
       <Switch>
-        <Route exact path="/" component={Bugs} />
+        <Route exact path="/" component={Todos} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/logout" component={Logout} />
         <Redirect to="/" />

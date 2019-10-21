@@ -46,7 +46,7 @@ const RecoverPassword = ({ error, loading, sendEmail, cleanUp }) => {
             Recover your password
           </Heading>
           <Heading size="h4" bold color="white">
-            Type in your email to recover your password
+            Type in your e-mail to recover your password
           </Heading>
           <StyledForm>
             <Field

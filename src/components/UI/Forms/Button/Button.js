@@ -39,3 +39,4 @@ const Button = ({ children, disabled, loading, contain, color, ...rest }) => {
 };
 
 export default Button;
+

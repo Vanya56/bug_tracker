@@ -47,5 +47,5 @@ store.firebaseAuthIsReady.then(() => {
       </BrowserRouter>
     </Provider>,
     root
-  );
+  )
 });
