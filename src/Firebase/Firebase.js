@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyDC4_b1n_Hkxvq5HqSxsgOh6NDAkdY7i5k",
+    apiKey: process.env.REACT_APP_APIKEY,
     authDomain: "tracker-2152.firebaseapp.com",
     databaseURL: "https://tracker-2152.firebaseio.com",
     projectId: "tracker-2152",
